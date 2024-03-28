@@ -1,0 +1,21 @@
+### Get employees
+
+GET http://localhost:9090/emp-service/employees
+
+### Get a specific user
+
+GET http://localhost:9090/emp-service/employees/3
+
+### Create an employee
+POST http://localhost:9090/emp-service/employees
+content-type: application/json
+
+{
+    "name": "Rinas",
+    "birthDate": {
+        "year": 1987,
+        "month": 02,
+        "day": 06
+    },
+    "mobileNo": "0775544433"
+}
